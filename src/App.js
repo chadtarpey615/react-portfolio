@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components//Navbar/Navbar"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Wrapper from "./components/Wrapper/Wrapper"
-import About from "./pages/About"
+import Home from "./pages/About"
 import Portfolio from "./pages/Portfolio"
-import Contact from "./pages/Contact"
+import Contact from "../src/pages/Contact";
+import Navbar from "./components/Navbar/Navbar"
 
 import './App.css';
 
@@ -16,11 +16,11 @@ function App() {
     <Router>
       <div>
         <Navbar>
-          <Wrapper>
-            <Route exact path="/" component={About} />
-            <Route exact path="/portfolio" component={Portfolio} />
-            <Route exact path="/contact" component={Contact} />
-         </Wrapper>
+          <Switch>
+            <Route component={Home} path="/" exact/>
+            <Route component={Portfolio} path="/portfolio" />
+            <Route  component={Contact} path="/contact"/>
+          </Switch>
         </Navbar>
       </div>
     </Router>
