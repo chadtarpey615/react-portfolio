@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../images/sky.jpeg"
 
-export default function About() {
+export default function Home() {
     return (
         <main>
             <img src={image} alt="Sky" className="absolute object-cover w-full h-full"/>
