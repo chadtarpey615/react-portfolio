@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons"
 
@@ -8,30 +9,53 @@ export default function Navbar() {
     <header className="bg-green-600">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
-          <NavLink to="/"
-            exact
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             activeClassName="text-white"
             className="inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font=bold tracking-widest">
             Chad Tarpey
-            </NavLink>
-          <NavLink to="/about"
+            </Link>
+          <Link 
+           activeClass="active"
+          to="main"
+           spy={true}
+           smooth={true}
+           offset={-70}
+           duration={900}
             activeClassName="text-white"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200">
             About
-            </NavLink>
-          <NavLink to="/portfolio"
+            </Link>
+          <Link 
+           activeClass="active"
+           to="portfolio"
+           spy={true}
+           smooth={true}
+           offset={-70}
+           duration={900}
             className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200"
             activeClassName="text-green-100 bg-green-700"
           >
 
             Portfolio
-            </NavLink>
-          <NavLink to="/contact"
+            </Link>
+          <Link 
+          to="contact"
+           activeClass="active"
+           spy={true}
+           smooth={true}
+           offset={-70}
+           duration={1400}
             className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200"
             activeClassName="text-green-100 bg-green-700"
           >
             Contact
-            </NavLink>
+            </Link>
 
         </nav>
 

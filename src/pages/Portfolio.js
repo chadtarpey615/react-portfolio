@@ -1,14 +1,16 @@
 import React from "react";
+import "./portfolio.css"
 import { SocialIcon } from "react-social-icons"
+import Projects from "../utils/projects.json"
 import image from "../images/project1.png"
 import image1 from "../images/time-zone-traveler.png"
 import image2 from "../images/weather.png"
+import MediaCard from "../components/Card/Card"
 
 
 export default function Portfolio() {
     return (
-        <main>
-            <div className="container">
+        <div id="portfolio"className="container">
                 <h1 className="text-5xl text-center py-2">My Projects</h1>
                 <div className="flex space-x-4">
                     <div className="flex-1">
@@ -35,7 +37,7 @@ export default function Portfolio() {
             click here to see github repo
                     </div>
                     <div className="flex-1">
-                        <img className="grid-cols-3" src={image} />
+                        <img className="float-left" src={image} />
                     </div>
 
                 </div>
@@ -71,28 +73,26 @@ export default function Portfolio() {
                     <div className="flex-1">
                         <h1 className="text-3xl">Super Hero Search</h1>
                         <p>First project into class</p>
-                        <SocialIcon c
-                            url="https://eatandplay.herokuapp.com"
-                            className="mr-4"
-                            target="_blank"
-                            fgColor="#fff"
-                            style={{ height: 35, width: 35 }} />
-            click here to see deployed app
-            <br />
-                        <SocialIcon
-                            url="https://github.com/chadtarpey615/Time-Zone-Traveler"
-                            className="mr-4"
-                            target="_blank"
-                            fgColor="#fff"
-                            style={{ height: 35, width: 35 }} />
-            click here to see github repo
+                        
                     </div>
                     <div className="flex-1">
                         <img className="grid-cols-2" src={image2} />
                     </div>
                 </div>
-            </div>
-        </main>
+
+                <MediaCard 
+                    title={Projects[0].title}
+                    image={Projects[0].image}
+                    text={Projects[0].text}
+                    url={Projects[0].url}
+                    repo={Projects[0].repo}
+                />
+            </div> 
     )
+        
+
+
+
+    
 }
 
