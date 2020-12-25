@@ -1,1 +1,8 @@
-// ./static/media/time-zone-traveler.c5ca0cf6.png  Image for project 2
+import React from "react";
+import { TableFooter } from "@material-ui/core";
+
+export default function Footer() {
+    return (
+        
+    )
+}

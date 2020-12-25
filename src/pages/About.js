@@ -10,7 +10,7 @@ export default function About() {
             <img src={image} alt="Sky"/>
             </div>
             <div className="col-4">
-                <h3>Hi I'm Chad Tarpey</h3>
+                <h1>Hi I'm Chad Tarpey</h1>
                 <p>fsdfjsdjfksdjfkjfjjfipasjfpiajfpiajfspajpasjpsajfpsadjpasjfpjfdsa</p>
             </div>
             </div>

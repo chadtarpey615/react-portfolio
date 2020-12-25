@@ -5,94 +5,58 @@ import Projects from "../utils/projects.json"
 import image from "../images/project1.png"
 import image1 from "../images/time-zone-traveler.png"
 import image2 from "../images/weather.png"
-import MediaCard from "../components/Card/Card"
+//import Cards from "../components/Card/Card"
+import Cards from "../components/Cards/Cards"
 
 
-export default function Portfolio() {
+
+export default function Portfolio(props) {
     return (
-        <div id="portfolio"className="container">
-                <h1 className="text-5xl text-center py-2">My Projects</h1>
-                <div className="flex space-x-4">
-                    <div className="flex-1">
-                        <h1 className="text-3xl">Super Hero Search</h1>
-                        <p>My first group project in class. The subject of this project is wrapped around Marvel
-                        & DC superHeroes.Using three api calls to get stats, gifs, and movies onto the screen that is created
-                        dynamically
-                        with JQUERY
-                        </p>
-                        <SocialIcon c
-                            url="https://eatandplay.herokuapp.com"
-                            className="mr-4"
-                            target="_blank"
-                            fgColor="#fff"
-                            style={{ height: 35, width: 35 }} />
-            click here to see deployed app
-            <br />
-                        <SocialIcon
-                            url="https://github.com/chadtarpey615/Time-Zone-Traveler"
-                            className="mr-4"
-                            target="_blank"
-                            fgColor="#fff"
-                            style={{ height: 35, width: 35 }} />
-            click here to see github repo
-                    </div>
-                    <div className="flex-1">
-                        <img className="float-left" src={image} />
-                    </div>
-
-                </div>
-                <div className="flex space-y-4">
-                    <div className="flex-1">
-                        <h1 className="text-3xl">Time Zone Traveler</h1>
-                        <p>Time Zone Traveler application that uses three api's. Map Box, Open cage, and Algolia api's.
-                        With GSAP animations for the intro loading of the home page. You can add food locations all over the world .
-                        When selecting the add food location button it with take you to food form page. From there you fill out all
-                        the fields to input a new food location into MySql database using sequelize models. Then a food icon will appear on
-  the map that you can click on that with display information for that restaurant including a link to that restaurant website.</p>
-                        <SocialIcon c
-                            url="https://eatandplay.herokuapp.com"
-                            className="mr-4"
-                            target="_blank"
-                            fgColor="#fff"
-                            style={{ height: 35, width: 35 }} />
-            click here to see deployed app
-            <br />
-                        <SocialIcon
-                            url="https://github.com/chadtarpey615/Time-Zone-Traveler"
-                            className="mr-4"
-                            target="_blank"
-                            fgColor="#fff"
-                            style={{ height: 35, width: 35 }} />
-            click here to see github repo
-                    </div>
-                    <div className="flex-1">
-                        <img className="grid-cols-2" src={image1} />
-                    </div>
-                </div>
-                <div className="flex space-y-4">
-                    <div className="flex-1">
-                        <h1 className="text-3xl">Super Hero Search</h1>
-                        <p>First project into class</p>
-                        
-                    </div>
-                    <div className="flex-1">
-                        <img className="grid-cols-2" src={image2} />
-                    </div>
-                </div>
-
-                <MediaCard 
-                    title={Projects[0].title}
-                    image={Projects[0].image}
-                    text={Projects[0].text}
-                    url={Projects[0].url}
-                    repo={Projects[0].repo}
-                />
-            </div> 
-    )
+          <div style={{ backgroundColor: "#17141d"}}>  
+          <h1 style={{ textAlign: "center", fontSize: "100px"}}>My Projects</h1>
+        <section id="portfolio" className="card-list">
+            <Cards 
+            title={Projects[0].title}
+            image={Projects[0].image}
+            text={Projects[0].text}
+            url={Projects[0].url}
+            url= {Projects[0].repo}
+            />
+            <Cards 
+            title={Projects[1].title}
+            image={Projects[1].image} 
+            text={Projects[1].text}
+            />
+            <Cards 
+            title={Projects[2].title}
+            image={Projects[2].image}
+            text={Projects[2].text}
+            />
+        </section>
+        <section id="portfolio" className="card-list">
+            <Cards 
+            title={Projects[3].title}
+            image={Projects[3].image}
+            text={Projects[3].text}
+            />
+            <Cards 
+            title={Projects[4].title}
+            image={Projects[4].image}
+            text={Projects[4].text}
+            />
+            <Cards 
+            title={Projects[5].title}
+            image={Projects[5].image}
+            text={Projects[5].text}
+            />
+        </section>
         
+        
+
+        </div>
+    )
 
 
 
     
 }
-

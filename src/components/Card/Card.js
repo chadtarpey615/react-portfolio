@@ -60,3 +60,4 @@ export default function MediaCard(props) {
         </Card>
     );
 }
+backgroundColor: "#17141d"
