@@ -10,19 +10,19 @@
     },
 
     {
-        "title": "Super Hero Search",
-        "image": "./static/media/project1.1578e61c.png",
+        "title": "Time Zone Traveler",
+        "image": "./static/media/time-zone-traveler.c5ca0cf6.png ",
         "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf" ,
-        "url": "https://chadtarpey615.github.io/Super-Heroes/",
-        "repo": "https://github.com/chadtarpey615/Super-Heroes"
+        "url": "https://eatandplay.herokuapp.com",
+        "repo": "https://github.com/outoftune266/Time-Zone-Traveler"
     },
-
+    
     {
-        "title": "Super Hero Search",
-        "image": "./static/media/project1.1578e61c.png",
+        "title": "Employee-Tracker",
+        "image": "../images/employee copy.png",
         "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf" ,
-        "url": "https://chadtarpey615.github.io/Super-Heroes/",
-        "repo": "https://github.com/chadtarpey615/Super-Heroes"
+        "url": "https://chadtarpey615.github.io/React-Employee-Directory/",
+        "repo": "https://github.com/chadtarpey615/React-Employee-Directory"
     },
 
     {

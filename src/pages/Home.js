@@ -1,14 +1,32 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Image from 'react-bootstrap/Image'
 import image from "../images/sky.jpeg"
 
 export default function Home() {
     return (
         <main id="home">
-            <img src={image} alt="Sky" className="absolute object-cover w-full h-full"/>
-            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-                <h1 className="text 6xl text-red-100 font-bold leading-none lg: leading-snug home-name">Hello. I'm Chad, a Full Stack Developer</h1>
-            </section>
+            <div className=" hero container-fluid">
+                <div className="row">
+                    <div className="col-md-12">
+                        <img src={image} alt="sky" className="img-responsive" style={{width:"100vw", height:"100vh"}}/>
+                            <div style={heroText} className="carousel-caption">
+                                <h1 style={{fontSize:"45px", fontWeight:"bold"}}>Hello. I'm Chad, a Full Stack Developer</h1>
+                            </div>
+      </div>
+                    </div>
+                </div>
+
         </main>
     )
+}
+
+const heroText = {
+    textAlign: "center",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    fontSize: "large",
+    translate: "translate(-50%, -50%)"
 }
 

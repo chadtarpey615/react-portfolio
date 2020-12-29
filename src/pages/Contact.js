@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <div id="contact" className="container py-5 px-5">
+        <div id="contact"className="container py-5 px-5">
             <div className="jumbotron-fluid bg-silent px-5">
                 <h1 className="col-md-6 col-md-12 my-5">Contact</h1>
                 <form data-toggle="validator" role="form">
