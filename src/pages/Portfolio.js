@@ -1,11 +1,17 @@
 import React from "react";
 import "./portfolio.css"
+import { Jumbotron, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import {
+    Card, CardText, CardBody, CardLink,
+    CardTitle, CardSubtitle
+  } from 'reactstrap';
 import { SocialIcon } from "react-social-icons"
 import Projects from "../utils/projects.json"
 import image from "../images/project1.png"
 import image1 from "../images/time-zone-traveler.png"
-import image2 from "../images/weather.png"
-import Card from "../components/Card/Card"
+import image2 from "../images/fitness copy.png"
+//import Card from "../components/Card/Card"
 import Cards from "../components/Cards/Cards"
 import Wrapper from "../components/Wrapper/Wrapper"
 
@@ -13,58 +19,104 @@ import Wrapper from "../components/Wrapper/Wrapper"
 
 export default function Portfolio(props) {
     return (
-          <div className="row" style={{ backgroundColor: "#17141d"}}>  
-          <h1 style={{ textAlign: "center", fontSize: "100px"}}>My Projects</h1>
-        <section id="portfolio" className="card-list col-3-sm px-5 py-5">
-            <Card 
-            title={Projects[0].title}
-            image={Projects[0].image}
-            text={Projects[0].text}
-            url={Projects[0].url}
-            repo= {Projects[0].repo}
-            />
-            <Card 
-            title={Projects[1].title}
-            image={Projects[1].image} 
-            text={Projects[1].text}
-            url={Projects[1].url}
-            repo= {Projects[1].repo}
-            />
-            <Card
-            title={Projects[2].title}
-            image={Projects[2].image}
-            text={Projects[2].text}
-            url={Projects[2].url}
-            repo= {Projects[2].repo}
-            />
-        </section>
-        <section id="portfolio" className="card-list">
-            <Card 
-            title={Projects[3].title}
-            image={Projects[3].image}
-            text={Projects[3].text}
-            url={Projects[3].url}
-            repo= {Projects[3].repo}
-            />
-            <Card 
-            title={Projects[4].title}
-            image={Projects[4].image}
-            text={Projects[4].text}
-            url={Projects[4].url}
-            repo= {Projects[4].repo}
-            />
-            <Card 
-            title={Projects[5].title}
-            image={Projects[5].image}
-            text={Projects[5].text}
-            url={Projects[5].url}
-            repo= {Projects[5].repo}
-            />
-        </section>
-        
-        
+        <>
+                <h1 className="display-3">My Projects</h1>
+        <p className="lead">This is a page of my projects.</p>
+        <hr className="my-2" />
+        <p className="lead"></p>
+              <div>
+                  <Row className="justify-content-between">
+                      <Col className="col-md-3">
+              <Card>
+                <CardBody>
+                  <CardTitle tag="h5">Super Hero Search</CardTitle>
+                </CardBody>
+                <img width="100%" src={image} alt="Card image cap" />
+                <CardBody>
+                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  <CardLink href="#">Card Link</CardLink>
+                  <CardLink href="#">Another Link</CardLink>
+                </CardBody>
+              </Card>
+              </Col>
 
-        </div>
+              <Col className="col-md-3">
+
+              <Card>
+                <CardBody>
+                  <CardTitle tag="h5">Time Zone Traveler</CardTitle>
+                </CardBody>
+                <img width="100%" src={image1} alt="Card image cap" />
+                <CardBody>
+                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  <CardLink href="#">Card Link</CardLink>
+                  <CardLink href="#">Another Link</CardLink>
+                </CardBody>
+              </Card>
+              </Col>
+              <Col className="col-md-3">
+
+              <Card>
+                <CardBody>
+                  <CardTitle tag="h5">Fitness Tracker</CardTitle>
+                </CardBody>
+                <img width="100%" src={image2} alt="Card image cap" />
+                <CardBody>
+                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  <CardLink href="#">Card Link</CardLink>
+                  <CardLink href="#">Another Link</CardLink>
+                </CardBody>
+              </Card>
+              </Col>
+              </Row>
+              <Row className="justify-content-between py-5">
+
+              <Col className="col-md-3">
+              <Card>
+                <CardBody>
+                  <CardTitle tag="h5">Card title</CardTitle>
+                </CardBody>
+                <img width="100%" src={image} alt="Card image cap" />
+                <CardBody>
+                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  <CardLink href="#">Card Link</CardLink>
+                  <CardLink href="#">Another Link</CardLink>
+                </CardBody>
+              </Card>
+              </Col>
+
+              <Col className="col-md-3">
+
+              <Card>
+                <CardBody>
+                  <CardTitle tag="h5">Card title</CardTitle>
+                </CardBody>
+                <img width="100%" src={image1} alt="Card image cap" />
+                <CardBody>
+                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  <CardLink href="#">Card Link</CardLink>
+                  <CardLink href="#">Another Link</CardLink>
+                </CardBody>
+              </Card>
+              </Col>
+              <Col className="col-md-3">
+
+              <Card>
+                <CardBody>
+                  <CardTitle tag="h5">Card title</CardTitle>
+                </CardBody>
+                <img width="100%" src={image2} alt="Card image cap" />
+                <CardBody>
+                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  <CardLink href="#">Card Link</CardLink>
+                  <CardLink href="#">Another Link</CardLink>
+                </CardBody>
+              </Card>
+              </Col>
+              </Row>
+             
+            </div>
+        </>
     )
 
 
