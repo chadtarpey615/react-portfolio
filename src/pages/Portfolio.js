@@ -17,7 +17,7 @@ import image5 from "../images/budget copy.png"
 
 export default function Portfolio(props) {
     return (
-        <>
+        <div className="portfolio" style={{backgroundColor:"#455456"}}>
             <h1 style={{ textAlign: "center", padding: "10px 10px" }} className="display-3">My Projects</h1>
             <hr className="my-2" />
             <p className="lead"></p>
@@ -193,7 +193,7 @@ export default function Portfolio(props) {
                 </Row>
 
             </div>
-        </>
+        </div>
     )
 
 

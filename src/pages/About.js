@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { IconContext} from "react-icons"
+import { DiJsBadge, DiReact, DiMongodb, DiMysql, DiNodejs, DiCss3, DiJqueryLogo } from "react-icons/di";
 
 
 
@@ -25,16 +25,18 @@ export default function About() {
                <Col className="col-md-4">
 
                         <h1 style={{ fontSize:"30px", textAlign:"center", paddingTop:"10px"}}>My Technologies</h1>
-                        <ul className="ul-check primary list-unstyled mt-5">
-                       <li><FontAwesomeIcon icon={["fal", "coffee"]} /></li> 
+                        <ul className=" text-align-center list-unstyled mt-5">
+                        <IconContext.Provider value={{ color: "blue", size:"3em"}}>
+                       <li> JavaScript <DiJsBadge/></li> 
 
-                            <li>CSS</li>
-                            <li>Node.js</li>
-                            <li>MySQL</li>
-                            <li>MongoDb</li>
-                            <li>React</li>
+                            <li>CSS <DiCss3/></li>
+                            <li>Node.js <DiNodejs/></li>
+                            <li>MySQL <DiMysql/></li>
+                            <li>MongoDb <DiMongodb/></li>
+                            <li>React <DiReact/></li>
                             <li>Express.js</li>
-                            <li>JQuery</li>
+                            <li>JQuery <DiJqueryLogo/></li>
+                            </IconContext.Provider>
                         </ul>
                         </Col>
                     </Row>
@@ -42,3 +44,5 @@ export default function About() {
     )
 
     }
+
+   // <IconContext.Provider value={{ color: "blue", size:"1em"}}>
