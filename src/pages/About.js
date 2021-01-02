@@ -19,10 +19,10 @@ export default function About() {
                         Looking for a company to work for so i can grow and learn everyday as full stack developer.
                </p>
                </Col>
-               <Col className="col-md-4">
+               <Col className="col-4">
                         <img src={image} alt="picture of my family" />
                         </Col>
-               <Col className="col-md-4">
+               <Col className="col-4">
 
                         <h1 style={{ fontSize:"30px", textAlign:"center", paddingTop:"10px"}}>My Technologies</h1>
                         <ul className=" text-align-center list-unstyled mt-5">

@@ -55,8 +55,8 @@ export default function Contact() {
           <FaFileAlt/>
         </IconContext.Provider>
 
-          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-          <Button href="../images/chadtarpey.pdf" target="_blank">My Resume</Button>
+          <CardText>A link to my Resume.</CardText>
+          <Button href="react-portfolio/src/images/chadtarpey.pdf" target="_blank">My Resume</Button>
         </CardBody>
       </Card>
             </Col>

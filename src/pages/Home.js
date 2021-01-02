@@ -8,7 +8,7 @@ export default function Home() {
         <main id="home">
             <div className=" hero container-fluid">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-sm-12">
                         <img src={image} alt="sky" className="img-responsive" style={{width:"100vw", height:"100vh"}}/>
                             <div style={heroText} className="carousel-caption">
                                 <h1 style={{fontSize:"45px", fontWeight:"bold"}}>Hello. I'm Chad, a Full Stack Developer</h1>

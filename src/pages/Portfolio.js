@@ -1,5 +1,4 @@
 import React from "react";
-import "./portfolio.css"
 import { Container, Row, Col } from 'reactstrap';
 import {Card, CardText, CardBody, CardLink,CardTitle, CardSubtitle} from 'reactstrap';
 import { SocialIcon } from "react-social-icons"
@@ -23,7 +22,7 @@ export default function Portfolio(props) {
             <p className="lead"></p>
             <div>
                 <Row className="justify-content-between">
-                    <Col className="col-md-3">
+                    <Col className="col-3">
                         <Card>
                             <CardBody>
                                 <CardTitle tag="h5">Super Hero Search</CardTitle>
@@ -52,7 +51,7 @@ export default function Portfolio(props) {
                         </Card>
                     </Col>
 
-                    <Col className="col-md-3">
+                    <Col className="col-3">
 
                         <Card>
                             <CardBody>
@@ -81,7 +80,7 @@ export default function Portfolio(props) {
                 </CardBody>
                         </Card>
                     </Col>
-                    <Col className="col-md-3">
+                    <Col className="col-3">
 
                         <Card>
                             <CardBody>
@@ -110,7 +109,7 @@ export default function Portfolio(props) {
                 </Row>
                 <Row className="justify-content-between py-5">
 
-                    <Col className="col-md-3">
+                    <Col className="col-3">
                         <Card>
                             <CardBody>
                                 <CardTitle tag="h5">Employee-Tracker</CardTitle>
@@ -136,7 +135,7 @@ export default function Portfolio(props) {
                         </Card>
                     </Col>
 
-                    <Col className="col-md-3">
+                    <Col className="col-3">
 
                         <Card>
                             <CardBody>
@@ -148,7 +147,7 @@ export default function Portfolio(props) {
                                 Can add and devour burgers and using express to get, post, update, and delete burgers
                   </CardText>
                                 <SocialIcon
-                                    url="https://chadtarpey615.github.io/burger/"
+                                    url=" https://pure-taiga-95225.herokuapp.com/"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
@@ -164,7 +163,7 @@ export default function Portfolio(props) {
                 </CardBody>
                         </Card>
                     </Col>
-                    <Col className="col-md-3">
+                    <Col className="col-3">
 
                         <Card>
                             <CardBody>
