@@ -1,6 +1,7 @@
 # react-portfolio
 # Chad Tarpey
-![Project Image](./public/images/screenshot.png)
+![Project Image]("")
+
 ---
 
 ### Table of Contents
