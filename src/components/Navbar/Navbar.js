@@ -8,7 +8,7 @@ import Resume from "../../images/chadtarpey.pdf"
 
 export default function NavBar() {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark">
+    <Navbar fixed="top" bg="dark" variant="dark" expand="md">
       <Navbar.Brand href="#home">
 
         Chad Tarpey
@@ -30,7 +30,7 @@ export default function NavBar() {
               About
             </Link>
           </Nav.Link>
-          <Nav.Link>
+          <Nav.Link className="mr-auto">
             <Link
               activeClass="active"
               to="portfolio"

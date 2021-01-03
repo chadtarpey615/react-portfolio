@@ -16,13 +16,13 @@ import image5 from "../images/budget copy.png"
 
 export default function Portfolio(props) {
     return (
-        <div className="portfolio" style={{backgroundColor:"#455456"}}>
+        <div className="container portfolio" style={{backgroundColor:"#455456"}}>
             <h1 style={{ textAlign: "center", padding: "10px 10px" }} className="display-3">My Projects</h1>
             <hr className="my-2" />
             <p className="lead"></p>
             <div>
-                <Row className="justify-content-between">
-                    <Col className="col-3">
+                <Row className="justify-content-between py-5">
+                    <Col className="col-md-3 col-12 py-3">
                         <Card>
                             <CardBody>
                                 <CardTitle tag="h5">Super Hero Search</CardTitle>
@@ -51,7 +51,7 @@ export default function Portfolio(props) {
                         </Card>
                     </Col>
 
-                    <Col className="col-3">
+                    <Col className="col-md-3 col-12 py-3">
 
                         <Card>
                             <CardBody>
@@ -80,7 +80,7 @@ export default function Portfolio(props) {
                 </CardBody>
                         </Card>
                     </Col>
-                    <Col className="col-3">
+                    <Col className="col-md-3 col-12 ">
 
                         <Card>
                             <CardBody>
@@ -107,9 +107,9 @@ export default function Portfolio(props) {
                         </Card>
                     </Col>
                 </Row>
-                <Row className="justify-content-between py-5">
+                <Row className="justify-content-between py-3">
 
-                    <Col className="col-3">
+                    <Col className="col-md-3 col-12 py-3">
                         <Card>
                             <CardBody>
                                 <CardTitle tag="h5">Employee-Tracker</CardTitle>
@@ -135,7 +135,7 @@ export default function Portfolio(props) {
                         </Card>
                     </Col>
 
-                    <Col className="col-3">
+                    <Col className="col-md-3 col-12 py-3">
 
                         <Card>
                             <CardBody>
@@ -163,7 +163,7 @@ export default function Portfolio(props) {
                 </CardBody>
                         </Card>
                     </Col>
-                    <Col className="col-3">
+                    <Col className="col-md-3 col-12 py-3">
 
                         <Card>
                             <CardBody>

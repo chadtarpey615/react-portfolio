@@ -4,23 +4,21 @@ import {Card, CardText, CardBody, CardLink,CardTitle, CardHeader, CardFooter, Bu
 import { IconContext} from "react-icons"
 import {FaLinkedin, FaGithub, FaFileAlt} from "react-icons/fa";
 import Resume from "../images/chadtarpey.pdf"
-import { Document } from "react-pdf";
-//import Navbar from "../components/Navbar/Navbar";
 
 
 
 
 export default function Contact() {
     return (
-<>
+<div className="container">
         <Row id="contact" className="justify-content-center py-5">
             <h1 style={{textAlign: "center"}}>Contact Me</h1>
             </Row>
             <Row className="justify-content-center py-2">
             <h1 style={{textAlign: "center"}}>chadtarpey@gmail.com</h1>
             </Row>
-            <Row className="justify-content-between">
-            <Col className="col-md-3">
+            <Row className="justify-content-between row">
+            <Col className=" col-md-3 col-12">
             <Card>
         <CardHeader>LinkedIn</CardHeader>
         <CardBody>
@@ -33,7 +31,7 @@ export default function Contact() {
         </CardBody>
       </Card>
       </Col>
-      <Col className="col-md-3">
+      <Col className="col-md-3 col-12">
 
       <Card>
         <CardHeader>GitHub</CardHeader>
@@ -48,7 +46,7 @@ export default function Contact() {
       </Card>
 
             </Col>
-            <Col className="col-md-3">
+            <Col className="col-md-3 col-12">
 
       <Card>
         <CardHeader>My Resume</CardHeader>
@@ -65,6 +63,6 @@ export default function Contact() {
             </Col>
         </Row>
 
-    </>
+    </div>
     )
 }
