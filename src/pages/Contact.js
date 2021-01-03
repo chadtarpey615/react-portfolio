@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import {Card, CardText, CardBody, CardLink,CardTitle, CardHeader, CardFooter, Button} from 'reactstrap';
 import { IconContext} from "react-icons"
 import {FaLinkedin, FaGithub, FaFileAlt} from "react-icons/fa";
+import Resume from "../images/chadtarpey.pdf"
+import { Document } from "react-pdf";
 //import Navbar from "../components/Navbar/Navbar";
 
 
@@ -56,7 +58,8 @@ export default function Contact() {
         </IconContext.Provider>
 
           <CardText>A link to my Resume.</CardText>
-          <Button href="react-portfolio/src/images/chadtarpey.pdf" target="_blank">My Resume</Button>
+          <Button href={Resume} target="_blank">My Resume</Button>
+          
         </CardBody>
       </Card>
             </Col>

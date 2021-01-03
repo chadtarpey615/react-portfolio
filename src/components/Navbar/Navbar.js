@@ -3,6 +3,8 @@ import { Navbar, Nav, Container, Form, Button, NavDropdown, FormControl } from '
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons"
+import Resume from "../../images/chadtarpey.pdf"
+
 
 export default function NavBar() {
   return (
@@ -72,7 +74,7 @@ export default function NavBar() {
             fgColor="#fff"
             style={{ height: 35, width: 35 }} />
           <SocialIcon
-            url=""
+            url={Resume}
             className="mr-4"
             target="_blank"
             fgColor="#fff"
