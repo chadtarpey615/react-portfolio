@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from 'reactstrap';
-import {Card, CardText, CardBody, CardLink,CardTitle, CardSubtitle} from 'reactstrap';
+import { Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle } from 'reactstrap';
 import { SocialIcon } from "react-social-icons"
 import Projects from "../utils/projects.json"
 import image from "../images/project1.png"
@@ -16,11 +16,11 @@ import image5 from "../images/budget copy.png"
 
 export default function Portfolio(props) {
     return (
-        <div className="container portfolio" style={{backgroundColor:"#455456"}}>
+        <div className="container portfolio" style={{ backgroundColor: "#455456" }}>
             <h1 style={{ textAlign: "center", padding: "10px 10px" }} className="display-3">My Projects</h1>
             <hr className="my-2" />
             <p className="lead"></p>
-            <div>
+            {/* <div>
                 <Row className="justify-content-between py-5">
                     <Col className="col-md-3 col-12 py-3">
                         <Card>
@@ -32,22 +32,22 @@ export default function Portfolio(props) {
                                 <CardText>The subject of this project is wrapped around Marvel
                                 & DC superHeroes.Using three api calls to get stats, gifs, and movies onto the screen that is created
                                 dynamically
-        with JQUERY.</CardText>
+            with JQUERY.</CardText>
                                 <SocialIcon
                                     url="https://chadtarpey615.github.io/Super-Heroes/"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    deployed version
-                    <SocialIcon
+                        deployed version
+                        <SocialIcon
                                     url="https://github.com/chadtarpey615/Super-Heroes"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    repo
-                </CardBody>
+                        repo
+                    </CardBody>
                         </Card>
                     </Col>
 
@@ -62,22 +62,22 @@ export default function Portfolio(props) {
                                 <CardText>Time Zone Traveler application that uses three api's. Map Box, Open cage, and Algolia api's.
                                 With GSAP animations for the intro loading of the home page. You can add food locations all over the world .
                                 When selecting the add food location button it with take you to food form page. From there you fill out all
-    the fields to input a new food location into MySql database using sequelize models.</CardText>
+        the fields to input a new food location into MySql database using sequelize models.</CardText>
                                 <SocialIcon
                                     url="https://eatandplay.herokuapp.com"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    deployed version
-                    <SocialIcon
+                        deployed version
+                        <SocialIcon
                                     url="https://github.com/outoftune266/Time-Zone-Traveler"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    repo
-                </CardBody>
+                        repo
+                    </CardBody>
                         </Card>
                     </Col>
                     <Col className="col-md-3 col-12 ">
@@ -95,15 +95,15 @@ export default function Portfolio(props) {
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    deployed version
-                    <SocialIcon
+                        deployed version
+                        <SocialIcon
                                     url="https://github.com/chadtarpey615/Workout-Tracker"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    repo
-                </CardBody>
+                        repo
+                    </CardBody>
                         </Card>
                     </Col>
                 </Row>
@@ -123,15 +123,15 @@ export default function Portfolio(props) {
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    deployed version
-                    <SocialIcon
+                        deployed version
+                        <SocialIcon
                                     url="https://github.com/chadtarpey615/React-Employee-Directory"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    repo
-                </CardBody>
+                        repo
+                    </CardBody>
                         </Card>
                     </Col>
 
@@ -145,22 +145,22 @@ export default function Portfolio(props) {
                             <CardBody>
                                 <CardText>Burger application that use handlebars.js for templating engine. MySql as the database using ORM to save burgers.
                                 Can add and devour burgers and using express to get, post, update, and delete burgers
-                  </CardText>
+                      </CardText>
                                 <SocialIcon
                                     url=" https://pure-taiga-95225.herokuapp.com/"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    deployed version
-                    <SocialIcon
+                        deployed version
+                        <SocialIcon
                                     url="https://github.com/chadtarpey615/burger"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    repo
-                </CardBody>
+                        repo
+                    </CardBody>
                         </Card>
                     </Col>
                     <Col className="col-md-3 col-12 py-3">
@@ -178,21 +178,49 @@ export default function Portfolio(props) {
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    deployed version
-                    <SocialIcon
+                        deployed version
+                        <SocialIcon
                                     url="https://peaceful-caverns-58225.herokuapp.com/"
                                     className="mr-4"
                                     target="_blank"
                                     fgColor="#fff"
                                     style={{ height: 35, width: 35 }} />
-                    repo
-                </CardBody>
+                        repo
+                    </CardBody>
                         </Card>
                     </Col>
                 </Row>
 
-            </div>
-        </div>
+            </div> */}
+
+
+            {
+                Projects.map((project) => {
+                    const { title, image, text, url, repo } = project;
+                    return (
+                        <>
+                            <h1>{title}</h1>
+                            <img src={image} alt={title} />
+                            <p>{text}</p>
+                            <SocialIcon
+                                url={url}
+                                className="mr-4"
+                                target="_blank"
+                                fgColor="#fff"
+                                style={{ height: 35, width: 35 }}
+                            />
+                            <SocialIcon
+                                url={repo}
+                                className="mr-4"
+                                target="_blank"
+                                fgColor="#fff"
+                                style={{ height: 35, width: 35 }}
+                            />
+                        </>
+                    )
+                })
+            }
+        </div >
     )
 
 
