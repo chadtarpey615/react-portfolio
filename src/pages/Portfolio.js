@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle } from 'reactstrap';
 import { SocialIcon } from "react-social-icons"
-import Projects from "../utils/projects.json"
+import { projects } from "../utils/projects.js"
 import image from "../images/project1.png"
 import image1 from "../images/time-zone-traveler.png"
 import image2 from "../images/fitness copy.png"
@@ -20,7 +20,7 @@ export default function Portfolio(props) {
             <h1 style={{ textAlign: "center", padding: "10px 10px" }} className="display-3">My Projects</h1>
             <hr className="my-2" />
             <p className="lead"></p>
-            {/* <div>
+            <div>
                 <Row className="justify-content-between py-5">
                     <Col className="col-md-3 col-12 py-3">
                         <Card>
@@ -191,16 +191,18 @@ export default function Portfolio(props) {
                     </Col>
                 </Row>
 
-            </div> */}
+            </div>
 
 
-            {
-                Projects.map((project) => {
+            {/* {
+                projects.map((project) => {
                     const { title, image, text, url, repo } = project;
                     return (
-                        <>
+                        <div className="projects">
+                            <div className="img">
+                                <img src={image} alt={title} />
+                            </div>
                             <h1>{title}</h1>
-                            <img src={image} alt={title} />
                             <p>{text}</p>
                             <SocialIcon
                                 url={url}
@@ -216,10 +218,10 @@ export default function Portfolio(props) {
                                 fgColor="#fff"
                                 style={{ height: 35, width: 35 }}
                             />
-                        </>
+                        </div>
                     )
                 })
-            }
+            } */}
         </div >
     )
 
