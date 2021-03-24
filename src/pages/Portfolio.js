@@ -20,7 +20,7 @@ export default function Portfolio(props) {
             <h1 style={{ textAlign: "center", padding: "10px 10px" }} className="display-3">My Projects</h1>
             <hr className="my-2" />
             <p className="lead"></p>
-            <div>
+            {/* <div>
                 <Row className="justify-content-between py-5">
                     <Col className="col-md-3 col-12 py-3">
                         <Card>
@@ -191,16 +191,18 @@ export default function Portfolio(props) {
                     </Col>
                 </Row>
 
-            </div>
+            </div> */}
 
 
-            {/* {
+            {
                 projects.map((project) => {
                     const { title, image, text, url, repo } = project;
+                    console.log(project
+                    )
                     return (
                         <div className="projects">
                             <div className="img">
-                                <img src={image} alt={title} />
+                                <img src={image.default} alt={title} />
                             </div>
                             <h1>{title}</h1>
                             <p>{text}</p>
@@ -221,7 +223,7 @@ export default function Portfolio(props) {
                         </div>
                     )
                 })
-            } */}
+            }
         </div >
     )
 

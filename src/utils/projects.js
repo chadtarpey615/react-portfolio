@@ -11,7 +11,7 @@ export const projects = [
   {
     "id": 2,
     "title": "Time Zone Traveler",
-    "image": "./static/media/time-zone-traveler.c5ca0cf6.png ",
+    "image": require("../images/project1.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://eatandplay.herokuapp.com",
     "repo": "https://github.com/outoftune266/Time-Zone-Traveler"
@@ -20,7 +20,7 @@ export const projects = [
   {
     "id": 3,
     "title": "Employee-Tracker",
-    "image": require("../images/employee copy.png"),
+    "image": require("./images/project1.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://chadtarpey615.github.io/React-Employee-Directory/",
     "repo": "https://github.com/chadtarpey615/React-Employee-Directory"
@@ -29,7 +29,7 @@ export const projects = [
   {
     "id": 4,
     "title": "Super Hero Search",
-    "image": "./static/media/project1.1578e61c.png",
+    "image": require("../images/project1.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://chadtarpey615.github.io/Super-Heroes/",
     "repo": "https://github.com/chadtarpey615/Super-Heroes"
@@ -38,7 +38,7 @@ export const projects = [
   {
     "id": 5,
     "title": "Super Hero Search",
-    "image": "./static/media/project1.1578e61c.png",
+    "image": require("../images/project1.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://chadtarpey615.github.io/Super-Heroes/",
     "repo": "https://github.com/chadtarpey615/Super-Heroes"
@@ -47,7 +47,7 @@ export const projects = [
   {
     "id": 6,
     "title": "Super Hero Search",
-    "image": "./static/media/project1.1578e61c.png",
+    "image": require("../images/project1.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://chadtarpey615.github.io/Super-Heroes/",
     "repo": "https://github.com/chadtarpey615/Super-Heroes"
