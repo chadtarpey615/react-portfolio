@@ -3,12 +3,12 @@ import { Container, Row, Col } from 'reactstrap';
 import { Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle } from 'reactstrap';
 import { SocialIcon } from "react-social-icons"
 import { projects } from "../utils/projects.js"
-import image from "../images/project1.png"
-import image1 from "../images/time-zone-traveler.png"
-import image2 from "../images/fitness copy.png"
-import image3 from "../images/employee copy.png"
-import image4 from "../images/screenshot copy.png"
-import image5 from "../images/budget copy.png"
+// import image from "../images/project1.png"
+// import image1 from "../images/time-zone-traveler.png"
+// import image2 from "../images/fitness copy.png"
+// import image3 from "../images/employee copy.png"
+// import image4 from "../images/screenshot copy.png"
+// import image5 from "../images/budget copy.png"
 
 
 

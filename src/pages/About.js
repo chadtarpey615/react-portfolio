@@ -5,7 +5,7 @@ import { DiJsBadge, DiReact, DiMongodb, DiMysql, DiNodejs, DiCss3, DiJqueryLogo 
 
 
 
-import image from "../images/IMG_6139.jpeg"
+import image from "../utils//images/IMG_6139.jpeg"
 
 export default function About() {
     return (

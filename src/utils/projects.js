@@ -2,7 +2,7 @@ export const projects = [
   {
     "id": 1,
     "title": "Super Hero Search",
-    "image": require("../images/project1.png"),
+    "image": require("./images/project1.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://chadtarpey615.github.io/Super-Heroes/",
     "repo": "https://github.com/chadtarpey615/Super-Heroes"
@@ -11,7 +11,7 @@ export const projects = [
   {
     "id": 2,
     "title": "Time Zone Traveler",
-    "image": require("../images/project1.png"),
+    "image": require("./images/time-zone-traveler.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://eatandplay.herokuapp.com",
     "repo": "https://github.com/outoftune266/Time-Zone-Traveler"
@@ -19,37 +19,37 @@ export const projects = [
 
   {
     "id": 3,
-    "title": "Employee-Tracker",
-    "image": require("./images/project1.png"),
+    "title": "Keep In Touch",
+    "image": require("./images/keepintouch.png"),
+    "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
+    "url": "https://sheltered-plains-45359.herokuapp.com//",
+    "repo": "https://github.com/Andrea-Boyd/Project-3"
+  },
+
+  {
+    "id": 4,
+    "title": "Employee Tracker",
+    "image": require("./images/employee copy.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
     "url": "https://chadtarpey615.github.io/React-Employee-Directory/",
     "repo": "https://github.com/chadtarpey615/React-Employee-Directory"
   },
 
   {
-    "id": 4,
-    "title": "Super Hero Search",
-    "image": require("../images/project1.png"),
-    "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
-    "url": "https://chadtarpey615.github.io/Super-Heroes/",
-    "repo": "https://github.com/chadtarpey615/Super-Heroes"
-  },
-
-  {
     "id": 5,
-    "title": "Super Hero Search",
-    "image": require("../images/project1.png"),
+    "title": "Fitness Tracker",
+    "image": require("./images/fitness copy.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
-    "url": "https://chadtarpey615.github.io/Super-Heroes/",
-    "repo": "https://github.com/chadtarpey615/Super-Heroes"
+    "url": "https://workout-fitness.herokuapp.com/",
+    "repo": "https://github.com/chadtarpey615/Workout-Tracker"
   },
 
   {
     "id": 6,
-    "title": "Super Hero Search",
-    "image": require("../images/project1.png"),
+    "title": "Offline Budget",
+    "image": require("./images/budget copy.png"),
     "text": "sdjhfsdnfsosfofhnohnonjosahjjoshn;ojashaos;asfanasnafnasasashffasf",
-    "url": "https://chadtarpey615.github.io/Super-Heroes/",
-    "repo": "https://github.com/chadtarpey615/Super-Heroes"
+    "url": "https://peaceful-caverns-58225.herokuapp.com/",
+    "repo": "https://github.com/chadtarpey615/Offline-Budget-Trackers"
   }
 ]

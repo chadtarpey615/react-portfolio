@@ -3,7 +3,7 @@ import { Navbar, Nav, Container, Form, Button, NavDropdown, FormControl } from '
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons"
-import Resume from "../../images/chadtarpey.pdf"
+import Resume from "../../utils/images/chadtarpey.pdf"
 
 
 export default function NavBar() {
