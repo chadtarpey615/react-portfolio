@@ -31,18 +31,28 @@
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: grid !important;
+  grid-row-gap: 2rem;
+  row-gap: 2rem;
+  grid-column-gap: 2rem;
+  column-gap: 2rem;
   border-radius: var(--mainBorderRadius);
   width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--fullWidth);
-  display: grid;
   row-gap: 2rem;
   column-gap: 2rem;
 }
 
-img {
+.img {
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: var(--mainBorderRadius);
+  border-top-right-radius: var(--mainBorderRadius);
   width: 100%;
+  display: block;
+}
+
+.container {
   display: block;
 }
