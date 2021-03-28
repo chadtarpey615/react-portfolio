@@ -17,11 +17,13 @@ import Project from "../components/Projects.js"
 
 export default function Portfolio(props) {
     return (
-        <div className="projects-center">
-            <h1 style={{ textAlign: "center", padding: "10px 10px" }} className="display-3">My Projects</h1>
-            <hr className="my-2" />
+        <>
+            <h1>My Projects</h1>
 
-            {/* <div>
+            <div className="projects-center" id="portfolio">
+
+
+                {/* <div>
                 <Row className="justify-content-between py-5">
                     <Col className="col-md-3 col-12 py-3">
                         <Card>
@@ -195,7 +197,7 @@ export default function Portfolio(props) {
             </div> */}
 
 
-            {/* {
+                {/* {
                 projects.map((project) => {
                     const { title, image, text, url, repo } = project;
                     console.log(project
@@ -225,12 +227,13 @@ export default function Portfolio(props) {
                     )
                 })
             } */}
-            {
-                projects.map((projects) => {
-                    return <Project key={projects.id} {...projects} />
-                })
-            }
-        </div >
+                {
+                    projects.map((projects) => {
+                        return <Project key={projects.id} {...projects} />
+                    })
+                }
+            </div >
+        </>
     )
 
 

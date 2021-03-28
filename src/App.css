@@ -49,7 +49,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
   border-radius: var(--mainBorderRadius);
-  width: 40%;
+  /* width: 40%; */
 }
 .projects:hover {
   box-shadow: var(--darkShadow);
@@ -74,4 +74,16 @@
 .projects-footer p {
   color: var(--darkGrey);
   margin-bottom: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 576px) {
+  .projects-center {
+    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+  }
 }

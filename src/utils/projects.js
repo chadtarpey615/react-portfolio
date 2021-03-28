@@ -12,7 +12,7 @@ export const projects = [
     "id": 2,
     "title": "Time Zone Traveler",
     "image": require("./images/time-zone-traveler.png"),
-    "text": "Time Zone Traveler application that uses three api's. Map Box, Open cage, and Algolia api's. With GSAP animations for the intro loading of the home page. You can add food locations all over the world . When selecting the add food location button it with take you to food form page. From there you fill out all the fields to input a new food location into MySql database using sequelize models.",
+    "text": "A app that uses three api's. Map Box, Open cage, and Algolia api's. With GSAP animations for the intro loading of the home page. When selecting the add food location button it with take you to food form page. From there you fill out all the fields to input a new food location into MySql database using sequelize models.",
     "url": "https://eatandplay.herokuapp.com",
     "repo": "https://github.com/outoftune266/Time-Zone-Traveler"
   },

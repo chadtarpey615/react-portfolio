@@ -1,5 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons"
+import { Container, Row, Col } from 'reactstrap';
+
 
 const Projects = ({ title, image, text, url, repo }) => {
     return (
@@ -17,6 +19,7 @@ const Projects = ({ title, image, text, url, repo }) => {
                     fgColor="#fff"
                     style={{ height: 35, width: 35 }}
                 />
+                Click here to see deployed version
                 <SocialIcon
                     url={repo}
                     className="mr-4"
@@ -24,6 +27,7 @@ const Projects = ({ title, image, text, url, repo }) => {
                     fgColor="#fff"
                     style={{ height: 35, width: 35 }}
                 />
+                Click here to see repository
             </div>
         </article>
     )
