@@ -17,10 +17,10 @@ import Project from "../components/Projects.js"
 
 export default function Portfolio(props) {
     return (
-        <div className="container projects" style={{ backgroundColor: "#455456" }}>
+        <div className="projects-center">
             <h1 style={{ textAlign: "center", padding: "10px 10px" }} className="display-3">My Projects</h1>
             <hr className="my-2" />
-            <p className="lead"></p>
+
             {/* <div>
                 <Row className="justify-content-between py-5">
                     <Col className="col-md-3 col-12 py-3">
