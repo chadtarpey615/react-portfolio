@@ -20,7 +20,7 @@ export default function About() {
                </p>
                 </Col>
                 <Col className="col-md-5 col-12">
-                    <img src={image} alt="picture of my family" />
+                    <img className="family-pic" src={image} alt="picture of my family" />
                 </Col>
                 <Col className="col-md-2 col-12">
 

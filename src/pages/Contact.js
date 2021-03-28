@@ -19,7 +19,7 @@ export default function Contact() {
       </Row>
       <Row className="justify-content-between row">
         <Col className=" col-md-3 col-12">
-          <Card>
+          <Card className="contacts">
             <CardHeader>LinkedIn</CardHeader>
             <CardBody>
               <IconContext.Provider value={{ color: "blue", size: "10em" }}>
@@ -33,7 +33,7 @@ export default function Contact() {
         </Col>
         <Col className="col-md-3 col-12">
 
-          <Card>
+          <Card className="contacts">
             <CardHeader>GitHub</CardHeader>
             <CardBody>
               <IconContext.Provider value={{ color: "black", size: "10em" }}>
@@ -48,7 +48,7 @@ export default function Contact() {
         </Col>
         <Col className="col-md-3 col-12">
 
-          <Card>
+          <Card className="contacts">
             <CardHeader>My Resume</CardHeader>
             <CardBody>
               <IconContext.Provider value={{ color: "tan", size: "10em" }}>
