@@ -10,7 +10,7 @@ import image from "../utils//images/IMG_6139.jpeg"
 export default function About() {
     return (
         <main id="main">
-            <Row className="py-5">
+            <Row>
 
 
                 <Col className="col-md-4 col-12 pt-10">
@@ -48,4 +48,4 @@ export default function About() {
 
 }
 
-
+   // <IconContext.Provider value={{ color: "blue", size:"1em"}}>
