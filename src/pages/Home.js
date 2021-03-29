@@ -6,7 +6,7 @@ import image from "../utils//images/sky.jpeg"
 export default function Home() {
     return (
         <main id="home">
-            <div className="container-fluid">
+            <div>
                 <div className="row">
                     <div className="col-lg-12 col-12">
                         <img src={image} alt="sky" className="img-responsive" style={{ width: "100vw", height: "100vh" }} />
@@ -25,7 +25,7 @@ const heroText = {
     textAlign: "center",
     position: "absolute",
     top: "50%",
-    left: "50%",
+    left: "45%",
     fontSize: "large",
     translate: "translate(-50%, -50%)"
 

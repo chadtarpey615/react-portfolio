@@ -36,7 +36,7 @@
   max-width: var(--fullWidth);
   display: grid;
   grid-row-gap: 2rem;
-  row-gap: 2rem;
+  row-gap: 4rem;
   grid-column-gap: 2rem;
   column-gap: 2rem;
   align-items: start;
@@ -52,6 +52,9 @@
   /* width: 40%; */
 }
 .projects:hover {
+  box-shadow: var(--darkShadow);
+}
+.contacts:hover {
   box-shadow: var(--darkShadow);
 }
 .projects img {
@@ -94,6 +97,11 @@ h1 {
 .family-pic {
   height: 29rem;
   object-fit: cover;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
 }
 
 @media screen and (min-width: 576px) {
