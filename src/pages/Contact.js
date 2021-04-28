@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { Card, CardText, CardBody, CardLink, CardTitle, CardHeader, CardFooter, Button } from 'reactstrap';
 import { IconContext } from "react-icons"
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
-import Resume from "../utils//images/chadtarpey.pdf"
+import Resume from "../utils/images/chadtarpey1.pdf"
 
 
 
