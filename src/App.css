@@ -51,8 +51,11 @@
   border-radius: var(--mainBorderRadius);
   /* width: 40%; */
 }
-.projects:hover {
+.projects:hover,
+.projects:focus {
   box-shadow: var(--darkShadow);
+   transform: scale(1.2);
+  z-index: 1;
 }
 .contacts:hover {
   box-shadow: var(--darkShadow);
@@ -65,6 +68,7 @@
 }
 .projects-footer {
   padding: 1.5rem;
+  margin-left: 5px;
 }
 .projects-footer h3,
 .projects-footer h4,
@@ -97,6 +101,11 @@ h1 {
 .family-pic {
   height: 29rem;
   object-fit: cover;
+}
+
+.card:hover {
+   transform: scale(1.1);
+  z-index: 1;
 }
 
 li {
