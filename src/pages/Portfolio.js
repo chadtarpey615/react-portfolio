@@ -23,6 +23,7 @@ export default function Portfolio(props) {
                     })
                 }
             </div >
+            <hr />
         </>
     )
 

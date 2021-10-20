@@ -43,6 +43,8 @@ export default function About() {
                 </Col>
 
             </Row>
+            <hr />
+
         </main>
     )
 
