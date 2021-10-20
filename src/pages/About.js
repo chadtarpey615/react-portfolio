@@ -27,6 +27,7 @@ export default function About() {
                 <Col className="col-lg-3 col-12">
 
                     <h1 style={{ fontSize: "3rem", textAlign: "center", paddingTop: "10px" }}>My Technologies</h1>
+                    <hr />
                     <IconContext.Provider value={{ color: "black", size: "7em" }}>
                         <ul>
                             <li><DiJsBadge /></li>

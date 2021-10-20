@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
@@ -25,6 +25,20 @@
   --smallWidth: 85vw;
   --maxWidth: 40rem;
   --fullWidth: 1170px;
+}
+
+.img-responsive {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-size: large;
+  translate: translate(-50%, -50%);
 }
 
 .section {
@@ -171,5 +185,25 @@ hr {
     box-shadow: var(--darkShadow);
     transform: scale(1.1);
     z-index: 1;
+  }
+
+  .img-responsive {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .hero-text {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .img-responsive {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .hero-text {
+    top: 20%;
   }
 }
