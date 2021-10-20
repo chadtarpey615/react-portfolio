@@ -15,6 +15,7 @@ export default function Contact() {
       <Row id="contact" className="justify-content-center py-5">
         <h1 style={{ textAlign: "center" }}>Contact Me</h1>
       </Row>
+      <Row><Form /></Row>
       <Row className="justify-content-center py-2">
         <h1 style={{ textAlign: "center" }}>chadtarpey@gmail.com</h1>
       </Row>
@@ -62,7 +63,7 @@ export default function Contact() {
             </CardBody>
           </Card>
         </Col>
-        <Form />
+
       </Row>
 
     </div>

@@ -40,13 +40,13 @@ const Form = () => {
         <form class="contact" onSubmit={sendEmail}>
             <div className="contact-grid">
                 <div className="contact-form">
-                    <label htmlFor="name" ></label>
+                    <label htmlFor="name" >Name</label>
                     <input type="text" placeholder="Please enter your name.." onChange={(e) => setName(e.target.value)} name="name" />
-                    <label htmlFor="email"></label>
+                    <label htmlFor="email">Email</label>
                     <input type="text" placeholder="Please enter your email address" onChange={(e) => setEmail(e.target.value)} name="email" />
-                    <label htmlFor="number"></label>
+                    <label htmlFor="number">Phone Number</label>
                     <input type="number" placeholder="Please enter your phone number to best reach you at " onChange={(e) => setNumber(e.target.value)} name="number" />
-                    <label htmlFor="message"></label>
+                    <label htmlFor="message">Message</label>
                     <input className="message" type="text" placeholder="Please leave a detailed message " onChange={(e) => setMessage(e.target.value)} name="message" />
 
                     <button >Click here to submit</button>

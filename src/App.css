@@ -131,6 +131,31 @@ hr {
   background-color: #555;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: x-large;
+  margin-top: 4px;
+  padding-top: 5px;
+}
+
+.contact-form input {
+  height: 3rem;
+  width: 60vw;
+}
+
+.contact-form button {
+  height: 3rem;
+  width: 30vw;
+  margin-left: 8rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+  background-color: lightblue;
+}
+
 @media screen and (min-width: 576px) {
   .projects-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
