@@ -13,10 +13,10 @@ export default function Contact() {
   return (
     <div className="container">
       <Row id="contact" className="justify-content-center py-5">
-        <h1 style={{ textAlign: "center" }}>Contact Me</h1>
+        <h2 style={{ textAlign: "center" }}>Contact Me</h2>
       </Row>
-      <Row><Form /></Row>
-      <Row className="justify-content-center py-2">
+      <Form />
+      <Row className="justify-content-center py-2 email">
         <h1 style={{ textAlign: "center" }}>chadtarpey@gmail.com</h1>
       </Row>
       <Row className="justify-content-between row">
