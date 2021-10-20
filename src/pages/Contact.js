@@ -4,6 +4,7 @@ import { Card, CardText, CardBody, CardLink, CardTitle, CardHeader, CardFooter, 
 import { IconContext } from "react-icons"
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import Resume from "../utils/images/chadtarpey1.pdf"
+import Form from "../components/Form"
 
 
 
@@ -61,6 +62,7 @@ export default function Contact() {
             </CardBody>
           </Card>
         </Col>
+        <Form />
       </Row>
 
     </div>
