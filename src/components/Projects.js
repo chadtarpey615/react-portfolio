@@ -19,7 +19,7 @@ const Projects = ({ title, image, text, url, repo }) => {
                     fgColor="#fff"
                     style={{ height: 35, width: 35 }}
                 />
-                 Deployed version
+                <p> Click icon to see deployed version</p>
                 <SocialIcon
                     url={repo}
                     className="mr-4"
@@ -27,7 +27,7 @@ const Projects = ({ title, image, text, url, repo }) => {
                     fgColor="#fff"
                     style={{ height: 35, width: 35 }}
                 />
-                 See repository
+                <p> Click icon to see repository</p>
             </div>
         </article>
     )
