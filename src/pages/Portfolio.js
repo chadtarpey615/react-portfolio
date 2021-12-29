@@ -11,11 +11,11 @@ import Project from "../components/Projects.js"
 
 
 export default function Portfolio(props) {
-
+    const [mobileIndex, setMobileIndex] = useState(3)
     const loadMore = window.innerWidth <= 833
 
     const mobileView =
-        projects.filter((projects, index) => index < 3).map((item) => {
+        projects.filter((projects, index) => index < mobileIndex).map((item) => {
             return (
 
                 <>
@@ -23,12 +23,19 @@ export default function Portfolio(props) {
                 </>
             )
         }
+
         )
 
     const desktopView = projects.map((projects) => {
 
         return <Project key={projects.id} {...projects} />
     })
+
+    const handleMobile = () => {
+        setMobileIndex(6)
+        const mobileButton = document.getElementById("mobile-projects")
+        mobileButton.classList.add("hidden")
+    }
 
 
     return (
@@ -38,6 +45,8 @@ export default function Portfolio(props) {
 
             <div className="projects-center" id="portfolio">
                 {!loadMore ? desktopView : mobileView}
+                {loadMore && <button id="mobile-projects" onClick={handleMobile}>load more</button>}
+
             </div >
             <hr />
         </>
