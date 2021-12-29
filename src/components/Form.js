@@ -10,18 +10,7 @@ const Form = () => {
     const [number, setNumber] = useState("");
     const [message, setMessage] = useState("");
 
-    // const handleSubmit = (event) => {
-    //     axios.post("http://localhost:3003/api/customers/create", {
-    //         name: name,
-    //         email: email,
-    //         number: number,
-    //         message: message
-    //     })
-    //         .then(res => {
-    //             console.log("hit")
-    //             console.log(res)
-    //         })
-    // }
+
 
     const sendEmail = (event) => {
         event.preventDefault();

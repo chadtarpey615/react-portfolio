@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'reactstrap';
 import { Card, CardText, CardBody, CardLink, CardTitle, CardHeader, CardFooter, Button } from 'reactstrap';
 import { IconContext } from "react-icons"
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
-import Resume from "../utils/images/chadtarpey1.pdf"
 import Form from "../components/Form"
 
 
@@ -19,7 +18,7 @@ export default function Contact() {
       {/* <Row className="justify-content-center py-2 email">
         <h1 style={{ textAlign: "center" }}>chadtarpey@gmail.com</h1>
       </Row> */}
-      <Row className="justify-content-between row my-5">
+      {/* <Row className="justify-content-between row my-5">
         <Col className=" col-md-3 col-12">
           <Card className="contacts">
             <CardHeader>LinkedIn</CardHeader>
@@ -64,7 +63,7 @@ export default function Contact() {
           </Card>
         </Col>
 
-      </Row>
+      </Row> */}
 
     </div>
   )

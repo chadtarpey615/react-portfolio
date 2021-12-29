@@ -111,6 +111,10 @@ h1 {
     font-size: 3rem;
 }
 
+.btn .btn-secondary {
+    background-color: none !important;
+}
+
 .contacts {
     background: var(--mainWhite);
     margin-bottom: 2rem;
@@ -145,7 +149,7 @@ hr {
     margin-right: auto;
     margin-left: auto;
     margin-top: 80px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     background-color: #555;
 }
 
@@ -165,7 +169,7 @@ hr {
 .contact-form input {
     height: 3rem;
     width: 60vw;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .contact-form button {
