@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 
 const Projects = ({ title, image, text, url, repo }) => {
+
     return (
         <article className="projects">
             <div className="img-container">
