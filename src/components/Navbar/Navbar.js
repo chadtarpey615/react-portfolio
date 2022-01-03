@@ -8,7 +8,7 @@ import Resume from "../../utils/images/chadtarpey1.pdf"
 
 export default function NavBar() {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark" expand="md">
+    <Navbar className="navy" fixed="top" bg="dark" variant="dark" expand="md">
       <Navbar.Brand href="#home">
 
         Chad Tarpey
@@ -59,7 +59,7 @@ export default function NavBar() {
 
 
         </Nav>
-        <div className="justify-content-between">
+        <div className="d-flex justify-content-start">
           <SocialIcon
             url="https://github.com/chadtarpey615"
             className="mr-4"

@@ -56,6 +56,7 @@ export default function About() {
                     </IconContext.Provider>
 
                 </Col>
+                <hr />
                 <Col className="col-lg-6  col-12">
 
                     <h1 style={{ fontSize: "3rem", textAlign: "center", paddingTop: "10px" }}>Social Links</h1>
